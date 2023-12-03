@@ -37,9 +37,17 @@
         E a <senha>
         Então deve exibir a <mensagem> de sucesso
 
-        Examples:
+        Examples: positivo
             | usuario                | senha      | mensagem       |
             | "Henrique96@gmail.com" | "87654321" | "olá Henrique" |
             | "Carlos77@gmail.com"   | "732002"   | "olá Carlos"   |
             | "Paula@gmail.com"      | "12345678" | "olá Paula"    |
             | "AnaSilva@gmail.com"   | "32256780" | "olá Ana"      |
+
+
+            Exemplos: Negativo
+
+            | usuario                | senha      | comportamento | mensagem                  |
+            | "Henrique@gmail.com    | "7654321"  | "invalido"    | "Email ou senha invalida" |
+            | "Henrique96@gmail.com" | "12345678" | "invalido"    | "Email ou senha invalida" |
+            | "Henrique@gmail.com"   | "12345678" | "invalido"    | "usuario não cadastrado"  |

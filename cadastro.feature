@@ -16,7 +16,7 @@ Então devo ver uma mensagem de "cadastro realizado com sucesso"
 
 
 Cenario: Email com formato invalido
-Quando preencho o campo de Email com o endereço invalido como "henrique@henrique.com"
+Quando preencho o campo de Email com o endereço invalido como "henrique#.com"
 E preencho os outros campos corretamente
 Então deve aparecer a seguinte mensagem "formato de Email invalido"
 
